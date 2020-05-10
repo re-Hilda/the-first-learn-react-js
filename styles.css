@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --main-purple-color: indigo;
+}
+
+.main-purple-color {
+  color: var(--main-purple-color);
+}
+
 html {
   font-size: 10px;
 }
@@ -34,5 +42,29 @@ html {
 
 .frame {
   border: 1px solid indigo;
-  height: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.title {
+  flex: 1;
+  text-align: center;
+  font-size: 3.6rem;
+  font-family: "Dancing Script", sans-serif;
+  text-transform: lowercase;
+}
+
+.header-btn {
+  font-size: 1.8rem;
+  font-family: "Bungee", sans-serif;
+  padding: 24px;
+  background: unset;
+  border: unset;
+  outline: unset;
 }
