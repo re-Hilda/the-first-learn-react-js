@@ -3,11 +3,16 @@
 }
 
 :root {
-  --main-purple-color: indigo;
+  --main-purple-color: rgb(187, 9, 98);
+  --main-pulm-color: rgb(114, 19, 192);
 }
 
 .main-purple-color {
   color: var(--main-purple-color);
+}
+
+.main-pulm-color {
+  color: var(--main-pulm-color);
 }
 
 html {
@@ -50,6 +55,7 @@ html {
 .header {
   display: flex;
   align-items: flex-start;
+  margin-top: 10px;
 }
 
 .title {
@@ -63,8 +69,41 @@ html {
 .header-btn {
   font-size: 1.8rem;
   font-family: "Bungee", sans-serif;
-  padding: 24px;
+  padding: 16px;
   background: unset;
   border: unset;
   outline: unset;
+  cursor: pointer;
+}
+
+.add {
+  padding: 16px;
+}
+
+.add-form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.add-input {
+  background: unset;
+  border: unset;
+  padding: 0 64px;
+  flex: 1;
+  border-bottom: solid 1px var(--main-purple-color);
+  outline: unset;
+  font-family: "Dancing Script", sans-serif;
+  font-size: 16px;
+  text-transform: lowercase;
+}
+
+.add-btn {
+  font-size: 1.8rem;
+  font-family: "Bungee", sans-serif;
+  padding: 16px;
+  padding-right: unset;
+  cursor: pointer;
+  background: unset;
+  outline: unset;
+  border: unset;
 }
